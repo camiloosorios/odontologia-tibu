@@ -1,113 +1,87 @@
-import Image from "next/image";
+import Footer from '@/components/Footer';
+import Form from '@/components/Form';
+import Header from '@/components/Header';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <Header>
+        <div className="mt-40 text-white">
+          <h1 className="text-4xl lg:text-6xl text-center font-monserrat">Odontología en Tibú</h1>
+          <div className="mx-10 lg:mx-20">
+            <h3 className="text-xl lg:text-2xl mt-5 container text-center font-monserrat">Tu salud oral es nuestra prioridad. Ofrecemos una amplia gama de servicios odontológicos y estética dental para ayudarte a alcanzar tu mejor sonrisa.</h3>
+          </div>
+          <button className='bg-teal-400 hover:bg-teal-500 ease-out duration-300 px-10 py-5 rounded-xl mt-10 mx-auto text-2xl block'>¡Agenda tu cita hoy!</button>
         </div>
+        <div className='mt-10 flex justify-center lg:justify-end lg:mx-20 items-center gap-10'>
+          <Link href="#">
+            <Image src="/fb-icon.svg" alt="Icono facebook" width={25} height={25}></Image>
+          </Link>
+          <Link href="#">
+            <Image src="/ig-icon.svg" alt="Icono instagram" width={35} height={35}></Image>
+          </Link>
+        </div>
+      </Header>
+      <main className='bg-gray-300'>
+        <div className="container mx-auto py-20 md:py-30 grid md:grid-cols-2 md:items-center">
+          <div className='mb-10'>
+            <h3 className='text-gray-600 text-4xl font-bold text-center font-monserrat'>Tu Estética Dental y Salud Oral en Manos Expertas</h3>
+            <p className='text-xl text-center text-gray-600 my-10 mx-10 font-monserrat'>Contamos con equipos de última tecnología y personal calificado para llevar a cabo cualquier tipo de procedimientos. Agenda una consulta y obtén la sonrisa que siempre has deseado.</p>
+            <button className='bg-teal-400 hover:bg-teal-500 ease-out duration-300 px-10 py-5 rounded-xl mt-10 mx-auto text-xl block text-white'>Conoce mas sobre nosotros</button>
+          </div>
+          <div className='flex justify-center'>
+            <Image src="/image1.jpg" alt='Imagen paciente' width={600} height={600} className='md:rounded-l-3xl shadow-lg'></Image>
+          </div>
+        </div>
+      </main>
+      <section className='grid grid-cols-1 md:grid-cols-3 py-20 md:py-32 bg-teal-400 gap-10 px-5 xl:px-60'>
+        <div className=' mb-10 md:mb-0 md:container'>
+          <Image src="/check-icon.svg" width={50} height={50} alt='Check icon' className='inline-block p-2'></Image>
+          <h3 className='inline-block text-2xl md:text-xl lg:text-2xl font-monserrat text-gray-600 font-semibold'>Profesionales</h3>
+          <p className='font-monserrat text-xl md:text-lg lg:text-xl text-gray-600'>Personal calificado para todo tipo de procedimientos y tratamientos.</p>
+        </div>
+        <div className=' mb-10 md:mb-0 md:container'>
+          <Image src="/check-icon.svg" width={50} height={50} alt='Check icon' className='inline-block p-2'></Image>
+          <h3 className='inline-block text-2xl md:text-xl lg:text-2xl font-monserrat text-gray-600 font-semibold'>Equipo Moderno</h3>
+          <p className='font-monserrat text-xl md:text-lg lg:text-xl text-gray-600'>Contamos con equipos modernos y tratamientos para alcanzar tu sonrisa soñada.</p>
+        </div>
+        <div className=' md:container'>
+          <Image src="/check-icon.svg" width={50} height={50} alt='Check icon' className='inline-block p-2'></Image>
+          <h3 className='inline-block text-2xl md:text-xl lg:text-2xl font-monserrat text-gray-600 font-semibold'>Seguimiento</h3>
+          <p className='font-monserrat text-xl md:text-lg lg:text-xl text-gray-600'>Siempre recibirás seguimiento durante tu tratamiento para alcanzar los objetivos planeados.</p>
+        </div>
+      </section>
+      <section className='bg-gray-300'>
+        <div className="container mx-auto py-20 md:py-30 grid md:grid-cols-2 md:items-center">
+          <div className='flex justify-center'>
+            <Image src="/odontologa.jpg" alt='Imagen odontologa' width={400} height={600} className='md:rounded-3xl shadow-lg'></Image>
+          </div>
+          <div className='mb-10'>
+            <h3 className='text-gray-600 text-4xl font-bold text-center font-monserrat mt-10 lg:mt-0'>Od. Llency Jaimes Sanabria</h3>
+            <p className='text-xl text-center text-gray-600 my-10 mx-10 font-monserrat'>Odontóloga general egresada de la Universidad Nacional de Colombia, 7 años de experiencia en diagnóstico y tratamiento de las diferentes patologías orales, cirugías orales, estética y blanqueamiento dental, endodoncia, limpieza dental, coronas y prótesis dentales.</p>
+            <button className='bg-teal-400 hover:bg-teal-500 ease-out duration-300 px-10 py-3 rounded-xl mt-10 mx-auto text-xl block text-white'>Ver ubicación</button>
+          </div>
+        </div>
+      </section>
+      <section className='bg-gray-400'>
+        <div className="container mx-auto py-20 md:py-30 grid md:grid-cols-2 md:items-center">
+          <div className='mb-10 text-white'>
+            <h3 className='text-4xl font-bold text-center font-monserrat'>¡Contactanos!</h3>
+            <p className='text-xl text-center font-semibold mt-10 mx-10 font-monserrat'>¿Tienes alguna pregunta o estás interesado en programar una cita?</p>
+            <p className='text-lg text-center font-semibold mt-5 mx-10 font-monserrat'>No dudes en ponerte en contacto a través de <Link href='https://api.whatsapp.com/send?phone=573135477178&text=Hola%20me%20gustaria%20obtener%20mas%20informaci%C3%B3n%20sobre%20tus%20servicios!%F0%9F%98%80' target='_blank' className='text-teal-400 font-bold'>WhatsApp</Link> o completa el formulario.</p>
+          </div>
+          <div className='flex justify-center'>
+            <Form />
+          </div>
+        </div>
+      </section>
+      <div className="w-72 flex fixed bottom-5 right-5 bg-green-500 text-white justify-between rounded-xl py-2">
+        <Link href="https://api.whatsapp.com/send?phone=573135477178&text=Hola%20me%20gustaria%20obtener%20mas%20informaci%C3%B3n%20sobre%20tus%20servicios!%F0%9F%98%80" target="_blank" className='flex items-center mx-auto gap-5'><Image src="/whatsapp.svg" alt='Logo whatsapp' width={35} height={35}></Image>¿Tienes alguna duda?</Link>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      <Footer />
+    </>
   );
 }
