@@ -43,9 +43,9 @@ export default function Header({ children } : { children: React.ReactNode }) {
                                             <Link href='/tratamientos/diseno-sonrisa' className='hover:text-teal-400 transition-colors ease-out duration-300 text-xl'>Diseño de sonrisa</Link>
                                             <Link href='/tratamientos/blanqueamiento-dental' className='hover:text-teal-400 transition-colors ease-out duration-300 text-xl'>Blanqueamiento dental</Link>
                                             <Link href='/tratamientos/rehabilitacion-oral' className='hover:text-teal-400 transition-colors ease-out duration-300 text-xl'>Rehabilitación oral</Link>
-                                            <Link href='/tratamientos' className='hover:text-teal-400 transition-colors ease-out duration-300 text-xl'>Periodoncia</Link>
-                                            <Link href='/tratamientos' className='hover:text-teal-400 transition-colors ease-out duration-300 text-xl'>Endodoncia</Link>
-                                            <Link href='/tratamientos' className='hover:text-teal-400 transition-colors ease-out duration-300 text-xl'>Cirugia oral</Link>
+                                            <Link href='/tratamientos/periodoncia' className='hover:text-teal-400 transition-colors ease-out duration-300 text-xl'>Periodoncia</Link>
+                                            <Link href='/tratamientos/endodoncia' className='hover:text-teal-400 transition-colors ease-out duration-300 text-xl'>Endodoncia</Link>
+                                            <Link href='/tratamientos/cirugia-oral' className='hover:text-teal-400 transition-colors ease-out duration-300 text-xl'>Cirugia oral</Link>
                                         </ul>
                                     </div>
                                 </li>

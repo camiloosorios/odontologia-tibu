@@ -6,11 +6,17 @@ import { useEffect, useState, ComponentType } from "react";
 import DiseñoDeSonrisa from "./DiseñoDeSonrisa";
 import BlanqueamientoDental from "./BlanqueamientoDental";
 import RehabilitacionOral from "./RehabilitacionOral";
+import Periodoncia from "./Periodoncia";
+import Endodoncia from "./Endodoncia";
+import CirugiaOral from "./CirugiaOral";
 
 const componentMap: { [key: string]: ComponentType } = {
     "diseno-sonrisa": DiseñoDeSonrisa,
     "blanqueamiento-dental": BlanqueamientoDental,
-    "rehabilitacion-oral": RehabilitacionOral
+    "rehabilitacion-oral": RehabilitacionOral,
+    "periodoncia": Periodoncia,
+    "endodoncia": Endodoncia,
+    "cirugia-oral": CirugiaOral,
 };
 
 export default function Tratamiento() {
