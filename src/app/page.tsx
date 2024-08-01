@@ -1,3 +1,4 @@
+import Button from '@/components/Button';
 import Footer from '@/components/Footer';
 import Form from '@/components/Form';
 import Header from '@/components/Header';
@@ -14,7 +15,11 @@ export default function Home() {
           <div className="mx-10 lg:mx-20">
             <h3 className="text-xl lg:text-2xl mt-5 container text-center font-monserrat">Tu salud oral es nuestra prioridad. Ofrecemos una amplia gama de servicios odontológicos y estética dental para ayudarte a alcanzar tu mejor sonrisa.</h3>
           </div>
-          <button className='bg-teal-400 hover:bg-teal-500 ease-out duration-300 px-10 py-5 rounded-xl mt-10 mx-auto text-2xl block'>¡Agenda tu cita hoy!</button>
+          <Button href='#contact'>
+            <span className="bg-teal-400 hover:bg-teal-500 ease-out duration-300 px-10 py-5 rounded-xl mt-10 mx-auto text-2xl block w-fit">
+              ¡Agenda tu cita hoy!
+            </span>
+          </Button>
         </div>
         <div className='mt-10 flex justify-center lg:justify-end lg:mx-20 items-center gap-10'>
           <Link href="#">
@@ -30,7 +35,11 @@ export default function Home() {
           <div className='mb-10'>
             <h3 className='text-gray-600 text-4xl font-bold text-center font-monserrat'>Tu Estética Dental y Salud Oral en Manos Expertas</h3>
             <p className='text-xl text-justify text-gray-600 my-10 mx-10 font-monserrat'>Contamos con equipos de última tecnología y personal calificado para llevar a cabo cualquier tipo de procedimientos. Agenda una consulta y obtén la sonrisa que siempre has deseado.</p>
-            <button className='bg-teal-400 hover:bg-teal-500 ease-out duration-300 px-10 py-5 rounded-xl mt-10 mx-auto text-xl block text-white'>Conoce mas sobre nosotros</button>
+            <Button href='#about-us'>
+              <span className="bg-teal-400 hover:bg-teal-500 ease-out duration-300 px-10 py-5 rounded-xl mt-10 mx-auto text-2xl block w-fit">
+                Conoce mas sobre nosotros
+              </span>
+            </Button>
           </div>
           <div className='flex justify-center'>
             <Image src="/image1.jpg" alt='Imagen paciente' width={600} height={600} className='md:rounded-l-3xl shadow-lg'></Image>
@@ -54,7 +63,7 @@ export default function Home() {
           <p className='font-monserrat text-xl md:text-lg lg:text-xl text-gray-600'>Siempre recibirás seguimiento durante tu tratamiento para alcanzar los objetivos planeados.</p>
         </div>
       </section>
-      <section className='bg-gray-300'>
+      <section className='bg-gray-300' id='about-us'>
         <div className="container mx-auto py-20 md:py-30 grid md:grid-cols-2 md:items-center">
           <div className='flex justify-center'>
             <Image src="/odontologa.jpg" alt='Imagen odontologa' width={400} height={600} className='md:rounded-3xl shadow-lg w-full md:w-[500px]'></Image>
@@ -66,7 +75,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='bg-gray-400'>
+      <section className='bg-gray-400' id='contact'>
         <div className="container mx-auto py-20 md:py-30 grid md:grid-cols-2 md:items-center">
           <div className='mb-10 text-white'>
             <h3 className='text-4xl font-bold text-center font-monserrat'>¡Contactanos!</h3>

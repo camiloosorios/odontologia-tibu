@@ -70,7 +70,7 @@ export default function Form() {
                         id='name'
                         value={form.name}
                         onChange={handleChange}
-                        className='bg-gray-100 w-full rounded-lg p-2 text-sm border border-gray-300' 
+                        className='bg-gray-100 w-full rounded-lg p-2 text-sm border border-gray-300 text-gray-600' 
                         placeholder='Nombre' 
                 />
                 {errors.name ? (<p className="text-red-500 italic text-sm pl-2">El nombre es requerido</p>) : null}
@@ -81,7 +81,7 @@ export default function Form() {
                         id='phone'
                         value={form.phone}
                         onChange={handleChange}
-                        className='bg-gray-100 w-full rounded-lg p-2 text-sm border border-gray-300' 
+                        className='bg-gray-100 w-full rounded-lg p-2 text-sm border border-gray-300 text-gray-600' 
                         placeholder='Telefono' 
                 />
                 {errors.phone ? (<p className="text-red-500 italic text-sm pl-2">El número de teléfono es requerido</p>) : null}
@@ -92,7 +92,7 @@ export default function Form() {
                             id='message'
                             value={form.message}
                             onChange={handleChange}
-                            className='bg-gray-100 w-full rounded-lg p-2 border border-gray-300 text-sm' 
+                            className='bg-gray-100 w-full rounded-lg p-2 border border-gray-300 text-sm text-gray-600' 
                             placeholder='Quisiera consultar...'
                 ></textarea>
                 {errors.message ? (<p className="text-red-500 italic text-sm pl-2">El mensaje es requerido</p>) : null}

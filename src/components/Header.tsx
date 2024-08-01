@@ -2,8 +2,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react'
+import Button from './Button';
 
-export default function Header({ children } : { children: React.ReactNode }) {
+export default function Header({ children }: { children: React.ReactNode }) {
     const [menuOpen, setMenuOpen] = useState(false);
     const [treatments, setTreatments] = useState(false);
 
@@ -26,15 +27,19 @@ export default function Header({ children } : { children: React.ReactNode }) {
                         <div>
                             <ul className="absolute lg:static lg:flex p-10 lg:gap-10 bg-gray-200 w-full lg:bg-transparent">
                                 <li className="text-lg font-semibold">
-                                    <Link href="#" className='hover:text-teal-400 transition-colors ease-out duration-300 text-xl'>Quiénes Somos</Link>
+                                    <Button href="#about-us">
+                                        <span className='hover:text-teal-400 transition-colors ease-out duration-300 text-xl'>
+                                            Quiénes somos
+                                        </span>
+                                    </Button>
                                 </li>
                                 <li className="text-lg font-semibold">
-                                    <Link  href="/tratamientos" 
-                                        className='hover:text-teal-400 transition-colors ease-out duration-300 text-xl' 
+                                    <Link href="/tratamientos"
+                                        className='hover:text-teal-400 transition-colors ease-out duration-300 text-xl'
                                         onMouseEnter={() => setTreatments(true)}
                                         onMouseLeave={() => setTreatments(false)}
                                     >Tratamientos</Link>
-                                    <div 
+                                    <div
                                         className={`p-8 bg-white text-gray-600 absolute top-24 right-20 border-4 border-t-teal-400 md:hidden ${treatments ? 'lg:block' : 'hidden'}`}
                                         onMouseEnter={() => setTreatments(true)}
                                         onMouseLeave={() => setTreatments(false)}
@@ -50,7 +55,11 @@ export default function Header({ children } : { children: React.ReactNode }) {
                                     </div>
                                 </li>
                                 <li className="text-lg font-semibold">
-                                    <Link href="#" className='hover:text-teal-400 transition-colors ease-out duration-300 text-xl'>Contacto</Link>
+                                    <Button href="#contact">
+                                        <span className='hover:text-teal-400 transition-colors ease-out duration-300 text-xl'>
+                                            Contacto
+                                        </span>
+                                    </Button>
                                 </li>
                             </ul>
                         </div>
