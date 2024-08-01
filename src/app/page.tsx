@@ -2,10 +2,14 @@ import Button from '@/components/Button';
 import Footer from '@/components/Footer';
 import Form from '@/components/Form';
 import Header from '@/components/Header';
+import Map from '@/components/Map';
 import Image from 'next/image';
 import Link from 'next/link';
+import Script from 'next/script';
 
 export default function Home() {
+
+  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || '';
 
   return (
     <>
@@ -71,7 +75,11 @@ export default function Home() {
           <div className='mb-10'>
             <h3 className='text-gray-600 text-4xl font-bold text-center font-monserrat mt-10 lg:mt-0'>Od. Llency Jaimes Sanabria</h3>
             <p className='text-xl text-justify text-gray-600 my-10 mx-10 font-monserrat'>Odontóloga general egresada de la Universidad Nacional de Colombia, 7 años de experiencia en diagnóstico y tratamiento de las diferentes patologías orales, cirugías orales, estética y blanqueamiento dental, endodoncia, limpieza dental, coronas y prótesis dentales.</p>
-            <button className='bg-teal-400 hover:bg-teal-500 ease-out duration-300 px-10 py-3 rounded-xl mt-10 mx-auto text-xl block text-white'>Ver ubicación</button>
+            <Button href='#location'>
+              <span className="bg-teal-400 hover:bg-teal-500 ease-out duration-300 px-10 py-3 rounded-xl mt-10 mx-auto text-xl block text-white w-fit">
+                Ver ubicación
+              </span>
+            </Button>
           </div>
         </div>
       </section>
@@ -85,6 +93,24 @@ export default function Home() {
           <div className='flex justify-center'>
             <Form />
           </div>
+        </div>
+      </section>
+      <section className='bg-gray-300' id='location'>
+        <div className="container mx-auto py-20 md:py-30 grid md:grid-cols-2 md:items-center">
+          <div className='text-xl text-justify text-gray-600 font-monserrat'>
+            <h3 className='text-gray-600 text-4xl font-bold text-center font-monserrat mt-10 lg:mt-0'>¡Ven a nuestro consultorio!</h3>
+            <p className='py-10 mx-10 lg:mx-20'>Estamos ubicados en la Calle 7 # 1-144, local 3. Costado derecho de la Catedral San Luis Beltrán.</p>
+            <p className='pt-5 text-center md:text-left lg:mx-20 text-xl text-gray-600 font-monserrat pb-10'>Ver ubicacion en <Link href={`https://www.google.com/maps/dir//8.6385775,-72.7336526/@8.6386478,-72.7335721,19z/data=!4m2!4m1!3e2?entry=ttu`} target='_blank' className='text-teal-500 font-bold'>Google Maps</Link></p>
+          </div>
+          <div className="">
+            <Image src="/ubicacion.jpg" width={650} height={500} alt='Ubicacion odontologia' className='inline-block lg:ml-20'></Image>
+          </div>
+        </div>
+        <div className="container mx-auto pb-10 md:pb-20">
+          <Map
+            lat={8.638583}
+            lng={-72.733645}
+          />
         </div>
       </section>
       <div className="w-72 flex fixed bottom-5 right-5 bg-green-500 text-white justify-between rounded-xl py-2">
