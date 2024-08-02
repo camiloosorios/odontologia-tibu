@@ -1,43 +1,41 @@
-"use client";
-import L from "leaflet";
-import { useEffect, useRef } from "react";
-import 'leaflet/dist/leaflet.css';
+"use client"
+import { useEffect, useRef } from 'react';
+import mapboxgl from 'mapbox-gl';
+import 'mapbox-gl/dist/mapbox-gl.css';
+
+const mapboxToken = 'pk.eyJ1IjoiY2EwNTExNyIsImEiOiJjbDczcXpubWEwMDRpM29sZnB5d2NkZnlqIn0.CSe6Yg8Cg2BV4_Hb-idu_Q';
+
+mapboxgl.accessToken = mapboxToken;
 
 interface MapProps {
-    lat: number;
-    lng: number;
-    zoom?: number;
+    longitude: number;
+    latitude: number;
 }
 
-export default function Map({ lat, lng, zoom = 30 }: MapProps) {
-    const mapRef = useRef<HTMLDivElement>(null);
-    const mapInstance = useRef<L.Map | null>(null);
+function Map({ longitude, latitude }: MapProps) {
+    const mapContainerRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
-        if (mapRef.current && !mapInstance.current) {
-            mapInstance.current = L.map(mapRef.current).setView([lat, lng], zoom);
-
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '© OpenStreetMap contributors',
-            }).addTo(mapInstance.current);
-
-            const customIcon = L.icon({
-                iconUrl: 'location.svg',
-                iconSize: [32, 32],
-                iconAnchor: [16, 32],
-                popupAnchor: [0, -32]
+        if (mapContainerRef.current) {
+            const map = new mapboxgl.Map({
+                container: mapContainerRef.current,
+                style: 'mapbox://styles/mapbox/streets-v11',
+                center: [longitude, latitude],
+                zoom: 17,
             });
 
-            L.marker([lat, lng], { icon: customIcon }).addTo(mapInstance.current)
-                .bindPopup('Odontología Tibú')
-                .openPopup();
-        } else if (mapInstance.current) {
-            mapInstance.current.setView([lat, lng], zoom);
-        }
-    }, [lat, lng, zoom]);
+            map.on('load', () => {
+                console.log('Map loaded');
+                console.log('Current zoom level:', map.getZoom());
+            });
 
-    return (
-        <div ref={mapRef} style={{ height: '400px', width: '100%', zIndex: '0' }} className="shadow-lg">
-        </div>
-    );
+            new mapboxgl.Marker().setLngLat([longitude, latitude]).addTo(map);
+
+            return () => map.remove();
+        }
+    }, [longitude, latitude]);
+
+    return <div ref={mapContainerRef} style={{ height: '400px', width: '100%' }} />;
 }
+
+export default Map;
