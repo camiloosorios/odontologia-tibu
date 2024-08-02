@@ -9,6 +9,7 @@ import RehabilitacionOral from "./RehabilitacionOral";
 import Periodoncia from "./Periodoncia";
 import Endodoncia from "./Endodoncia";
 import CirugiaOral from "./CirugiaOral";
+import Link from "next/link";
 
 const componentMap: { [key: string]: ComponentType } = {
     "diseno-sonrisa": DiseñoDeSonrisa,
@@ -32,12 +33,13 @@ export default function Tratamiento() {
         <div className="w-full bg-gray-200">
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center w-fit mx-auto md:gap-10 text-gray-600 font-monserrat text-center py-20'>
                 {tratamientosData.map(tratamiento => (
-                    <TratamientoCard
-                        key={tratamiento.title}
-                        image={tratamiento.image}
-                        title={tratamiento.title}
-                        link={tratamiento.link}
-                    />
+                    <Link href={'tratamientos/' + tratamiento.link}>
+                        <TratamientoCard
+                            key={tratamiento.title}
+                            image={tratamiento.image}
+                            title={tratamiento.title}
+                        />
+                    </Link>
                 ))}
             </div>
         </div>

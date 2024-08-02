@@ -40,7 +40,7 @@ export default function Header({ children }: { children: React.ReactNode }) {
                                         onMouseLeave={() => setTreatments(false)}
                                     >Tratamientos</Link>
                                     <div
-                                        className={`p-8 bg-white text-gray-600 absolute top-24 right-20 border-4 border-t-teal-400 md:hidden ${treatments ? 'lg:block' : 'hidden'}`}
+                                        className={`p-8 bg-white text-gray-600 absolute top-24 right-20 border-4 border-t-teal-400 invisible ${treatments ? 'lg:visible' : ''}`}
                                         onMouseEnter={() => setTreatments(true)}
                                         onMouseLeave={() => setTreatments(false)}
                                     >

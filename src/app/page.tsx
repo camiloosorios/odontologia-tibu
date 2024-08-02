@@ -23,10 +23,10 @@ export default function Home() {
           </Button>
         </div>
         <div className='mt-10 flex justify-center lg:justify-end lg:mx-20 items-center gap-10'>
-          <Link href="#">
+          <Link href="https://www.facebook.com/people/Consultorio-Odontolog%C3%ADa-Tib%C3%BA/61563906201342/" target='_blank'>
             <Image src="/fb-icon.svg" alt="Icono facebook" width={25} height={25}></Image>
           </Link>
-          <Link href="#">
+          <Link href="https://www.instagram.com/od.llencyjaimes/?igsh=MWdrMDJzaXc2bmthbw%3D%3D" target='_blank'>
             <Image src="/ig-icon.svg" alt="Icono instagram" width={35} height={35}></Image>
           </Link>
         </div>
@@ -37,7 +37,7 @@ export default function Home() {
             <h3 className='text-gray-600 text-4xl font-bold text-center font-monserrat'>Tu Estética Dental y Salud Oral en Manos Expertas</h3>
             <p className='text-xl text-justify text-gray-600 my-10 mx-10 font-monserrat'>Contamos con equipos de última tecnología y personal calificado para llevar a cabo cualquier tipo de procedimientos. Agenda una consulta y obtén la sonrisa que siempre has deseado.</p>
             <Button href='#about-us'>
-              <span className="bg-teal-400 hover:bg-teal-500 ease-out duration-300 px-10 py-5 rounded-xl mt-10 mx-auto text-xl block w-fit">
+              <span className="bg-teal-400 hover:bg-teal-500 text-white ease-out duration-300 px-10 py-5 rounded-xl mt-10 mx-auto text-xl block w-fit">
                 Conoce mas sobre nosotros
               </span>
             </Button>
