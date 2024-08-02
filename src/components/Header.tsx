@@ -12,7 +12,7 @@ export default function Header({ children }: { children: React.ReactNode }) {
         setMenuOpen(!menuOpen);
     }
     return (
-        <header className="relative h-[70vh]">
+        <header className="relative lg:h-[70vh]">
             <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/background.jpg')" }}></div>
             <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="relative container mx-auto">

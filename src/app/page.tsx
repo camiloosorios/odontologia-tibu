@@ -37,7 +37,7 @@ export default function Home() {
             <h3 className='text-gray-600 text-4xl font-bold text-center font-monserrat'>Tu Estética Dental y Salud Oral en Manos Expertas</h3>
             <p className='text-xl text-justify text-gray-600 my-10 mx-10 font-monserrat'>Contamos con equipos de última tecnología y personal calificado para llevar a cabo cualquier tipo de procedimientos. Agenda una consulta y obtén la sonrisa que siempre has deseado.</p>
             <Button href='#about-us'>
-              <span className="bg-teal-400 hover:bg-teal-500 ease-out duration-300 px-10 py-5 rounded-xl mt-10 mx-auto text-2xl block w-fit">
+              <span className="bg-teal-400 hover:bg-teal-500 ease-out duration-300 px-10 py-5 rounded-xl mt-10 mx-auto text-xl block w-fit">
                 Conoce mas sobre nosotros
               </span>
             </Button>
