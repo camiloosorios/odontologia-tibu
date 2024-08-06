@@ -1,6 +1,6 @@
-import Endodoncia from '@/components/Endodoncia';
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
+import Endodoncia from "@/components/Endodoncia";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 export default function EndodonciaPage() {
     return (

@@ -1,21 +1,19 @@
-import nodemailer from 'nodemailer';
+import nodemailer from "nodemailer";
 
 export async function POST(request: Request) {
     const { name, phone, message } = await request.json();
 
-    // Configura el transporte de Nodemailer
     const transporter = nodemailer.createTransport({
-        service: 'Gmail', // Puedes usar Gmail o configurar otro servicio SMTP
+        service: 'Gmail',
         auth: {
-            user: process.env.EMAIL_USER, // Tu correo electrónico
-            pass: process.env.EMAIL_PASS, // Tu contraseña de correo electrónico
+            user: process.env.EMAIL_USER,
+            pass: process.env.EMAIL_PASS,
         },
     });
 
-    // Configura el correo electrónico
     const mailOptions = {
-        from: process.env.EMAIL_USER, // De qué correo se envía
-        to: 'bryancamiloos@ufps.edu.co', // Correo del destinatario
+        from: process.env.EMAIL_USER,
+        to: 'bryancamiloos@ufps.edu.co',
         subject: 'Nuevo contacto en pagina web',
         text: `Nombre: ${name}\nTeléfono: ${phone}\nMensaje: ${message}`,
     };

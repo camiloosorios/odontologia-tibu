@@ -1,6 +1,6 @@
-import CirugiaOral from '@/components/CirugiaOral';
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
+import CirugiaOral from "@/components/CirugiaOral";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 export default function CirugiaOralPage() {
     return (

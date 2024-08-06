@@ -1,7 +1,7 @@
 "use client"
-import { useEffect, useRef } from 'react';
-import mapboxgl from 'mapbox-gl';
-import 'mapbox-gl/dist/mapbox-gl.css';
+import { useEffect, useRef } from "react";
+import mapboxgl from "mapbox-gl";
+import "mapbox-gl/dist/mapbox-gl.css";
 
 const mapboxToken = 'pk.eyJ1IjoiY2EwNTExNyIsImEiOiJjbDczcXpubWEwMDRpM29sZnB5d2NkZnlqIn0.CSe6Yg8Cg2BV4_Hb-idu_Q';
 

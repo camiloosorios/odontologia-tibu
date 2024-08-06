@@ -1,7 +1,7 @@
-import BlanqueamientoDental from '@/components/BlanqueamientoDental';
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
-import React from 'react'
+import BlanqueamientoDental from "@/components/BlanqueamientoDental";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import React from "react";
 
 export default function BlanqueamientoDentalPage() {
     return (

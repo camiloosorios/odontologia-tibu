@@ -1,7 +1,7 @@
 "use client";
-import Link from 'next/link';
-import { useRouter } from 'next/navigation'
-import { MouseEvent } from 'react';
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { MouseEvent } from "react";
 
 interface SmoothScrollLinkProps {
     href: string;
