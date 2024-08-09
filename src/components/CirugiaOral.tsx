@@ -10,7 +10,7 @@ export default function CirugiaOral() {
                     <p className="text-xl text-justify text-gray-600 my-10 font-monserrat">Rama de la odontología que abarca diversos procedimientos, el más común relacionado a esta área en nuestra consulta es la extracción dental que consiste en la remoción de una pieza dental que tiene mal pronóstico y es imposible mantenerla en boca. La más común son los molares de juicio conocidas como cordales.</p>
                 </div>
                 <div className="flex justify-center">
-                    <Image src="/cirugia.jpg" alt="Imagen rehabilitacion" width={600} height={500} className="shadow-lg"></Image>
+                    <Image src="/images/cirugia.jpg" alt="Imagen rehabilitacion" width={600} height={500} className="shadow-lg"></Image>
                 </div>
             </div>
         </article>

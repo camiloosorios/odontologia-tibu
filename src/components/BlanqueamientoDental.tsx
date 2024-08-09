@@ -10,7 +10,7 @@ export default function BlanqueamientoDental() {
           <p className="text-xl text-justify text-gray-600 my-10 mx-5 font-monserrat">Es un tratamiento que consigue aclarar el color de las piezas dentales. Mediante esta reducción de tonos en el diente, es posible lucir una sonrisa más joven con unos dientes claros, aspecto natural y estéticos.</p>
         </div>
         <div className="flex justify-center">
-          <Image src="/blanqueamiento.jpg" alt="Imagen blanqueamiento" width={400} height={400} className="md:rounded-l-3xl shadow-lg"></Image>
+          <Image src="/images/blanqueamiento.jpg" alt="Imagen blanqueamiento" width={400} height={400} className="md:rounded-l-3xl shadow-lg"></Image>
         </div>
       </div>
     </article>

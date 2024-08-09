@@ -10,7 +10,7 @@ export default function Endodoncia() {
                     <p className="text-xl text-justify text-gray-600 my-10 font-monserrat">La endodoncia es una solución efectiva para abordar problemas en el interior del diente, preservando su estructura.</p>
                 </div>
                 <div className="flex justify-center">
-                    <Image src="/rehabilitacion.jpg" alt="Imagen rehabilitacion" width={500} height={500} className="shadow-lg"></Image>
+                    <Image src="/images/rehabilitacion.jpg" alt="Imagen rehabilitacion" width={500} height={500} className="shadow-lg"></Image>
                 </div>
             </div>
             <div className="container mx-auto text-gray-600 font-monserrat bg-teal-400 py-5 px-10">

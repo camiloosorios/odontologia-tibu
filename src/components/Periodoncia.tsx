@@ -10,7 +10,7 @@ export default function Periodoncia() {
                     <p className="text-xl text-justify text-gray-600 my-10 font-monserrat">La salud de las encías es fundamental para mantener una sonrisa saludable.</p>
                 </div>
                 <div className="flex justify-center">
-                    <Image src="/rehabilitacion.jpg" alt="Imagen rehabilitacion" width={500} height={500} className="shadow-lg"></Image>
+                    <Image src="/images/rehabilitacion.jpg" alt="Imagen rehabilitacion" width={500} height={500} className="shadow-lg"></Image>
                 </div>
             </div>
         </article>

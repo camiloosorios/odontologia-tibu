@@ -15,7 +15,7 @@ export default function RehabilitacionOral() {
                     <p className="text-xl text-gray-600 font-monserrat text-justify mb-5">Al ser un proceso especializado y personalizado al caso de cada paciente, los precios de la rehabilitación oral varían de paciente en paciente y caso por caso.</p>
                 </div>
                 <div className="flex justify-center">
-                    <Image src="/rehabilitacion.jpg" alt="Imagen rehabilitacion" width={500} height={500} className="shadow-lg"></Image>
+                    <Image src="/images/rehabilitacion.jpg" alt="Imagen rehabilitacion" width={500} height={500} className="shadow-lg"></Image>
                 </div>
             </div>
             <div className="container mx-auto text-gray-600 font-monserrat px-10 bg-teal-400 py-5">
@@ -46,7 +46,7 @@ export default function RehabilitacionOral() {
                     <p className="text-xl text-justify text-gray-600 my-5 font-monserrat">Las prótesis parciales reemplazan los dientes del maxilar o mandíbula, y se realizan a medida para tener una semejanza a los dientes restantes en cuanto a forma y color. Cada prótesis que realizamos implica un estudio previo y la realización de moldes específicos.</p>
                 </div>
                 <div className="flex justify-center">
-                    <Image src="/parcial.jpg" alt="Imagen protesis parcial" width={400} height={400} className="p-5"></Image>
+                    <Image src="/images/parcial.jpg" alt="Imagen protesis parcial" width={400} height={400} className="p-5"></Image>
                 </div>
             </div>
             <div className="container mx-auto grid md:grid-cols-2 md:items-center px-10">
@@ -57,7 +57,7 @@ export default function RehabilitacionOral() {
                     <p className="text-xl text-justify text-gray-600 my-5 font-monserrat">La prótesis dental completa es una solución ideal para aquellos pacientes que han perdido todos sus dientes debido a diversos factores, y quieren lucir una sonrisa radiante y comer sólidos sin problemas.</p>
                 </div>
                 <div className="flex justify-center">
-                    <Image src="/completa.jpg" alt="Imagen protesis completa" width={400} height={400} className="p-5"></Image>
+                    <Image src="/images/completa.jpg" alt="Imagen protesis completa" width={400} height={400} className="p-5"></Image>
                 </div>
             </div>
         </article>

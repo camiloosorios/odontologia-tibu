@@ -15,7 +15,7 @@ export default function DiseñoDeSonrisa() {
           </p>
         </div>
         <div className="flex justify-center">
-          <Image src="/image1.jpg" alt="Imagen paciente" width={600} height={600} className="md:rounded-l-3xl shadow-lg"></Image>
+          <Image src="/images/image1.jpg" alt="Imagen paciente" width={600} height={600} className="md:rounded-l-3xl shadow-lg"></Image>
         </div>
       </div>
       <div className="container mx-auto text-gray-600 font-monserrat bg-teal-400 pt-5 px-10">
