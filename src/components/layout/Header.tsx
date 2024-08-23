@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import Button from "./Button";
+import Button from "../Button";
 
 export default function Header({ children }: { children: React.ReactNode }) {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -29,11 +29,10 @@ export default function Header({ children }: { children: React.ReactNode }) {
                     <nav className={`relative lg:static lg:flex font-nunito border-4 lg:border-0 border-t-teal-400 bg-gray-200 lg:bg-transparent text-gray-600 lg:text-white ${menuOpen ? "opacity-100 transition-opacity duration-500" : "opacity-0 lg:opacity-100"}`}>
                         <ul className="absolute lg:static lg:flex p-10 lg:gap-10 bg-gray-200 w-full lg:bg-transparent">
                             <li className="text-lg font-semibold">
-                                <Button href="#about-us">
-                                    <span className="hover:text-teal-400 transition-colors ease-out duration-300 text-xl">
-                                        Quiénes somos
-                                    </span>
-                                </Button>
+                                <Link href="/quienes-somos"
+                                    className="hover:text-teal-400 transition-colors ease-out duration-300 text-xl">
+                                    Quiénes somos
+                                </Link>
                             </li>
                             <li className="text-lg font-semibold">
                                 <Link href="/tratamientos"
@@ -59,11 +58,10 @@ export default function Header({ children }: { children: React.ReactNode }) {
                                 </div>
                             </li>
                             <li className="text-lg font-semibold">
-                                <Button href="#contact">
-                                    <span className="hover:text-teal-400 transition-colors ease-out duration-300 text-xl">
-                                        Contacto
-                                    </span>
-                                </Button>
+                                <Link href="/contacto"
+                                    className="hover:text-teal-400 transition-colors ease-out duration-300 text-xl">
+                                    Contacto
+                                </Link>
                             </li>
                         </ul>
                     </nav>
