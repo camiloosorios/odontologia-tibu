@@ -1,6 +1,6 @@
 import DiseñoDeSonrisa from "@/components/DiseñoDeSonrisa";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
 import React from "react";
 
 export default function DiseñoDeSonrisaPage() {

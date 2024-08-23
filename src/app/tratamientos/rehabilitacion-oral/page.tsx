@@ -1,5 +1,5 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 import dynamic from "next/dynamic";
 
 const RehabilitacionOralDynamic = dynamic(() => import('@/components/RehabilitacionOral'), {
