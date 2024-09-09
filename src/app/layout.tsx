@@ -47,6 +47,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <meta name="google-site-verification" content="CKZ-MA73fk7fmd0WjIl8qYagbOptYG7D6klU9FcsMEc" />
       <body className={inter.className}>
         {children}
         <link rel="canonical" href="https://odontologia-tibu.vercel.app" />
