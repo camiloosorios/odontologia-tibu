@@ -26,7 +26,7 @@ export default function Footer() {
                 <div className="mb-2 lg:mb-10">
                     <h3 className="text-2xl font-monserrat py-5 lg:py-10 font-bold">Contáctanos</h3>
                     <ul>
-                        <li className="text-lg">Calle 7 1-144 local 3.</li>
+                        <li className="text-lg">Carrera 7 # 7-14 barrio el Carmen</li>
                         <li className="mb-3 text-lg">Tibú, Norte de Santander</li>
                         <li className="mb-3 text-lg md:text-sm lg:text-lg">
                             <a href="mailto:consultorioodontologicotibu@gmail.com" className="hover:text-teal-400 transition-colors ease-out duration-300">
